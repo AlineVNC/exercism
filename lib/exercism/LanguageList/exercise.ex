@@ -8,7 +8,8 @@ defmodule Exercism.LanguageList.Exercise do
   end
 
   def remove(list) do
-    # Please implement the remove/1 function
+    [_head | tail] = list
+    tail
   end
 
   def first(list) do
