@@ -13,14 +13,15 @@ defmodule Exercism.LanguageList.Exercise do
   end
 
   def first(list) do
-    # Please implement the first/1 function
+    [head | _tail] = list
+    head
   end
 
   def count(list) do
-    # Please implement the count/1 function
+    Enum.count(list)
   end
 
   def functional_list?(list) do
-    # Please implement the functional_list?/1 function
+    Enum.member?(list, "Elixir")
   end
 end
